@@ -1,0 +1,40 @@
+Read the standart input
+	1. read n maps/files
+	2. read a string/s and transform it into a map
+
+Open and read
+	Open files;
+	Read open map
+		Read the first line - store for variables; ?global variable? + line lenght
+		Read the second line - get how long is it
+		Read the whole map and put it in a array 2D
+		Check the map for map errors
+
+Solve
+** what we need - struct solution - with x, y, size; 
+	start loop
+	move starting point to a new place or/ start form a[0][0]
+							//optimisation idea - end the loop for going into n - The_biggest_size_solution_we_have_found_now
+		start loop
+			check if valind / if inside of map
+			we store the current solution
+			we expand +1 in x and y;
+		end loop with the biggest solution for this position       *store in x,y,size
+	store the solution if is the biggest so far
+	end loop
+
+
+
+
+Print it
+
+Continue to the next map
+
+
+
+
+Others:
+ - Do Makefile
+ 
+
+Optimisation ideas 
