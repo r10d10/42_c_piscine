@@ -58,6 +58,27 @@ static int open_file(const char *path)
 	return 0;
 }
 
+static int read_file_line_known_length(char **ptr, unsigned int length)
+{
+	while (length > status.buffer_size - 1) { // We ran out of buffer.
+		if (0 != increase_buffer())
+			return 1;
+	}
+
+	ssize_t r = read(status.fd, status.buffer, length);
+	if (r != length) {
+		return 1;
+	}
+
+	if (status.buffer[length - 1] != '\n') {
+		return 1;
+
+	}
+	status.buffer[length - 1] = '\0';
+	*ptr = status.buffer;
+	return 0;
+}
+
 static int read_file_line(char **ptr)
 {
 	unsigned int cnt = 0;
@@ -108,7 +129,8 @@ static int read_additional_line(t_map *map, unsigned int row)
 {
 	char *ptr;
 
-	if (0 != read_file_line(&ptr) || (NULL == ptr))
+	if (0 != read_file_line_known_length(&ptr, map->width + 1) ||
+	    (NULL == ptr))
 		return 1;
 
 	return read_obstacles(map, row, ptr);
