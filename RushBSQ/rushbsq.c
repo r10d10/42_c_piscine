@@ -112,8 +112,11 @@ static void solve_path(const char *path)
 
 	map_free(&map);
 
-	printf("Solution is size %d, at %d:%d\n",
-	       solution.best, solution.row, solution.column);
+	if (solution.best == 0)
+		printf("No solution found\n");
+	else
+		printf("Solution is size %d, at %d:%d\n",
+		       solution.best, solution.row, solution.column);
 }
 
 int main (int argc, char **argv)
