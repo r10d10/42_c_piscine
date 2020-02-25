@@ -3,7 +3,7 @@ Read the standart input
 	2. read a string/s and transform it into a map
 
 Open and read
-	Open files;
+	Open file;
 	Read open map
 		Read the first line - store for variables; ?global variable? + line lenght
 		Read the second line - get how long is it

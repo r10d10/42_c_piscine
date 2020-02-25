@@ -13,13 +13,11 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
-typedef struct			s_solution_trio
+typedef struct			s_solution
 {
-	int			x;
-	int			y;
-	int			best;
-}				t_solution_trio;
-
-int main (int argc, char **argv);
+	unsigned int		row;
+	unsigned int	        column;
+	unsigned int		best;
+}				t_solution;
 
 #endif
