@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-const unsigned int BUFFER_STEP = 64;
+const unsigned int BUFFER_INITIAL = 64;
 
 typedef struct status_s {
 	int fd;
@@ -18,7 +18,7 @@ static status_t status;
 
 static int increase_buffer(void)
 {
-	char *aux = malloc(status.buffer_size + BUFFER_STEP);
+	char *aux = malloc(2 * status.buffer_size);
 	if (NULL == aux)
 		return 1;
 
@@ -29,7 +29,7 @@ static int increase_buffer(void)
 	}
 	free(status.buffer);
 	status.buffer = aux;
-	status.buffer_size += BUFFER_STEP;
+	status.buffer_size *= 2;
 
 	return 0;
 }
@@ -47,7 +47,7 @@ static int open_file(const char *path)
 	}
 
 	status.fd = fd;
-	status.buffer_size = BUFFER_STEP;
+	status.buffer_size = BUFFER_INITIAL;
 	status.buffer = malloc(status.buffer_size);
 	if (NULL == status.buffer) {
 		if (0 != fd)
