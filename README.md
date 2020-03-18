@@ -6,9 +6,9 @@ The finished files are written following the standards of Norminette - a strict 
 
 More information in subjects/.
 
-*BSQ* - Group project - Find the largest square in a 2-dimensional character matrix and mark it with a given "fill" character. The program should read from both standard input and from files. Grading was done not only by functionality, but by the efficiency of the program  in both speed and memory.
+*RushBSQ* - Group project - Find the largest square in a 2-dimensional character matrix and mark it with a given "fill" character. The program should read from both standard input and from files. Grading was done not only by functionality, but by the efficiency of the program  in both speed and memory.
 
-*Rush 00* - Group project - Make an ASCII-art rectangle with a different pattern per group.
+*rush 00* - Group project - Make an ASCII-art rectangle with a different pattern per group.
 
 *Rush 01* - Group project - Make a 4x4 Skyscraper game solver given an initial grid.
 
