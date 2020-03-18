@@ -5,16 +5,16 @@ Finished with success.
 
 The finished files are written following the standards of Norminette - a strict style checker used in 42.
 
+BSQ - Group project - Find the largest square in a 2-dimensional character matrix and mark it with a given "fill" character. The program should read from both standard input and from files. Grading was done not only by functionality, but by the efficiency of the program  in both speed and memory. Only about 1% of Pisciners have ever had success in this project.
 
+Rush 00 - Group project - Make an ASCII-art rectangle with a different pattern per group.
+Rush 01 - Group project - Make a 4x4 Skyscraper game solver given an initial grid.
 
 s00 - Basics of Unix
 s01 - Basic bash scripts
 c00 - Introduction to C
 c01 - More Introduction to C
 c02 - Recursion and Recursive Backtracking
-Day 05 - Review of C material
-Day 06 - Program arguments
-Day 07 - Pointers and arrays
-
-Rush 00 - Group project - Make an ASCII-art rectangle with a different pattern per group.
-Rush 01 - Group project - Make a 4x4 Sudoku-board solver given an initial grid.
+c03 - Review of C material
+c04 - Program arguments
+c05 - Pointers and arrays
