@@ -1,4 +1,4 @@
-**Projects from 42Madrid - Telefonica - C Piscine**
+# **Projects from 42Madrid - Telefonica - C Piscine**
 
 Feb 2020
 
@@ -11,6 +11,8 @@ More information in subjects/.
 *rush 00* - Group project - Make an ASCII-art rectangle with a different pattern per group.
 
 *Rush 01* - Group project - Make a 4x4 Skyscraper game solver given an initial grid.
+
+*Rush 02* - WIP - Group project - Make a program that reads an arbitrarily large integer from the standard input and transforms it into its corresponding cardinal numeral using a given dictionary file.
 
 *s00* - Basics of Unix
 *s01* - Basic bash scripts
